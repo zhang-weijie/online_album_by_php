@@ -1,5 +1,1 @@
-add 'value=""' to option 'please select' in addPhoto.php
-set option 'date' to data type calender globally
-set option value (corresponding to id in each db table) starting from 1
-use functions like date() and strtotime() of php to format date string transported from the frontend
-redis is not only for the cache of options there, but also for that of sql records
+alternative implmentation of online album with php
