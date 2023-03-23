@@ -1,1 +1,2 @@
-alternative implmentation of online album with php
+alternative implementation of online album with php
+mysql and redis required

@@ -126,7 +126,7 @@ insert  into figure(`id`,`name`)values
 
 (8,'Landscape'),
 
-(10,'Animals');
+(9,'Animals');
 
 /*Table structure for table `photo` */
 

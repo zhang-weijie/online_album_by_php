@@ -11,7 +11,7 @@
     //select db
     mysqli_query($link,'use `master_slave_replication_db`');
 
-    //test
-//    $res = mysqli_query($link, 'show tables');
-//    var_dump($res);
+//test
+//$res = mysqli_query($link, 'show tables');
+//var_dump($res);
 //mysqli_close($link);

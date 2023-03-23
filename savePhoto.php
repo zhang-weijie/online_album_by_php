@@ -3,7 +3,7 @@
     $file = $_FILES['photo'];
     $path = '';
     if (is_uploaded_file($file['tmp_name'])){
-        $path = 'static/photo/' . time() . $file['name'];
+        $path = 'static/photo/' . time();
         if (move_uploaded_file($file['tmp_name'],$path)){
             echo '<script>alert("Photo saved!")</script>';
         } else {
@@ -26,6 +26,8 @@
     $sql = "insert into master_slave_replication_db.photo(`author_id`, `country_id`, `city_id`, `theme_id`, `figure_id`, `date`, `desc`, `path`) values($author_id,$country_id,$city_id,$theme_id,$figure_id,'$date','$desc','$path')";
     echo $sql;
     mysqli_query($link,$sql);
+    mysqli_commit($link);
+    echo 'finished!';
 
 //    header("Location: ./addPhoto.php");
 //    header("refresh:3,addPhoto.php");

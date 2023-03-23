@@ -40,4 +40,3 @@ function draw_options($conn): void
     }
 }
 
-
