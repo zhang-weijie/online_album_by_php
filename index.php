@@ -28,7 +28,8 @@
     <form action="searchPhoto.php" method="post">
         <?php
         include_once 'setupRedis.php';
-        draw_options($conn);
+        global $conn;
+        drawOptions($conn);
         ?>
         date: <input name="date" type="date">
         <input type="submit" value="Search" style="background-color: lawngreen">

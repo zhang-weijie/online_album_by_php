@@ -1,5 +1,6 @@
 <?php
 include_once 'setupRedis.php';
+global $conn;
 $opName = $_GET['opName'];
 $required = ($opName === 'add') ? '' : 'required';
 $hint = ($opName === 'rename') ? 'select an item to rename' : 'check all items';

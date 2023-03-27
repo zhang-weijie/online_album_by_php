@@ -1,10 +1,3 @@
-/*
-SQLyog Ultimate v12.14 (64 bit)
-MySQL - 5.7.31-log : Database - master_slave_replication_db
-*********************************************************************
-*/
-
-
 /*!40101 SET NAMES utf8 */;
 
 /*!40101 SET SQL_MODE=''*/;
@@ -32,29 +25,19 @@ CREATE TABLE `city` (
 
 insert  into city(`id`,`name`)values
 
-(1,'Beijing'),
+(1,'Vienna'),
 
-(2,'Chongqing'),
+(2,'Salzburg'),
 
-(3,'Luan'),
+(3,'Brussels'),
 
-(4,'Weichang'),
+(4,'Toronto'),
 
-(5,'Weihai'),
+(5,'Quebec'),
 
-(6,'Ejina'),
+(6,'Ottawa'),
 
-(7,'Berlin'),
-
-(8,'Frankfurt'),
-
-(9,'Budapest'),
-
-(10,'Warsaw'),
-
-(11,'Wroclaw'),
-
-(12,'Krakow');
+(7,'Copenhagen');
 
 /*Table structure for table `country` */
 
@@ -70,13 +53,13 @@ CREATE TABLE country (
 
 insert  into country(`id`,`name`)values
 
-(1,'China'),
+(1,'Austria'),
 
-(2,'Germany'),
+(2,'Belgium'),
 
-(3,'Hungary'),
+(3,'Canada'),
 
-(4,'Poland');
+(4,'Denmark');
 
 /*Table structure for table `author` */
 
@@ -92,9 +75,7 @@ CREATE TABLE author (
 
 insert  into author(`id`,`name`)values
 
-(1,'Weijie'),
-
-(2,'Yifan');
+(1,'Me');
 
 /*Table structure for table `figure` */
 
@@ -110,23 +91,13 @@ CREATE TABLE figure (
 
 insert  into figure(`id`,`name`)values
 
-(1,'Weijie'),
+(1,'Friends'),
 
-(2,'Yifan'),
+(2,'Family'),
 
-(3,'Weijie and Yifan'),
+(3,'Animals'),
 
-(4,'Classmates'),
-
-(5,'Friends'),
-
-(6,'Teachers'),
-
-(7,'Family'),
-
-(8,'Landscape'),
-
-(9,'Animals');
+(4,'Landscape');
 
 /*Table structure for table `photo` */
 

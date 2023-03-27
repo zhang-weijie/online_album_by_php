@@ -19,10 +19,11 @@
 </head>
 <body>
 <div class="queryTable">
-    <form action="savePhoto.php" method="post" enctype="multipart/form-data">
+    <form action="executeAddPhoto.php" method="post" enctype="multipart/form-data">
         <?php
         include_once 'setupRedis.php';
-        draw_options($conn);
+        global $conn;
+        drawOptions($conn, [], true);
         ?>
         date: <input name="date" type="date">
         desc：<input name="desc" placeholder="Leave some notes~">
@@ -30,11 +31,16 @@
         <br>
         <br>
         <div class="btn">
-            Select a photo：<input type="file" name="photo" required>
-            <input type="submit" value="Add" style="background-color: lawngreen">
+            Select a photo：<input type="file" name="photo" accept=".png" required>
+            <input type="submit" value="Add" style="background-color: lawngreen" onclick="showSaveMessage()">
             <button style="background-color: aqua"><a href="index.php">Home</a></button>
         </div>
     </form>
 </div>
 </body>
+<script>
+    function showSaveMessage(){
+
+    }
+</script>
 </html>

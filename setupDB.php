@@ -12,6 +12,6 @@
     mysqli_query($link,'use `master_slave_replication_db`');
 
 //test
-//$res = mysqli_query($link, 'show tables');
+//$res = mysqli_query($link, 'select * from `master_slave_replication_db`.`photo` where `author_id` = 1');
 //var_dump($res);
 //mysqli_close($link);

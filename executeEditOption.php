@@ -1,5 +1,4 @@
 <?php
-include_once 'setupRedis.php';
 $params = $_POST;
 //distinguish different operations according to length of array $params and names of its elements
 //examples: output of var_dump($params)
