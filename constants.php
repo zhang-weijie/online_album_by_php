@@ -55,6 +55,8 @@ function sqlUpdate($link, $table, $keyVals, $condition) : void
     mysqli_query($link, $sql);
 }
 
+
+
 function drawOptions($conn, $params = [], $required = false): void
 {
     global $idOptions;
